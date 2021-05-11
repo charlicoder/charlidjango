@@ -10,6 +10,8 @@ DEBUG = config('DEBUG', default=False)
 
 ALLOWED_HOSTS = ["*"]
 
+LOGIN_REDIRECT_URL = 'home'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'login'
 
 # Application definition
 

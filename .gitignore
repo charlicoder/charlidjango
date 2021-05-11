@@ -17,6 +17,7 @@ venv
 
 # other
 .DS_Store
+dbs
 
 # javascript
 package-lock.json
