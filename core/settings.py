@@ -22,6 +22,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'graphene_django',
+
+    'books',
+    'ingredients',
+    'catalog',
 ]
 
 MIDDLEWARE = [
@@ -63,9 +69,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'dbs/db.sqlite3',
     }
 }
+
+GRAPHENE = {    "SCHEMA": "catalog.schema.schema"}
 
 
 # Password validation
